@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <pico/stdlib.h>
+#include <TestDefines.h>
 
 int main(void)
 {

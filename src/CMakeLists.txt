@@ -1,8 +1,6 @@
 # This is the main binary. List your C files here.
 add_executable(lab5
     sleep.c
-    timer.c
-    task_delay.c
     )
 
 pico_set_program_name(lab5 "test")
