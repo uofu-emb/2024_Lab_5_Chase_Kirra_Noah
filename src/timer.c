@@ -26,6 +26,16 @@ int main(void)
     gpio_put(OUT_PIN, toggle);
 
     add_repeating_timer_ms(-DELAY_MS, timer_callback, NULL, &timer);
-    while(1) __nop();
+    while(1) //__nop();
+    {
+        volatile int baseValue = 9898;
+        volatile int temp = 0;
+        for(int i = 0; i < 100000; i++)
+        {
+            temp = baseValue++/7;
+        }
+        temp++;
+    } 
+    __nop();
     return 0;
 }

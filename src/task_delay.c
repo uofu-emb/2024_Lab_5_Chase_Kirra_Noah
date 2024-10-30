@@ -9,6 +9,13 @@ void main_task(__unused void *params)
     int toggle = 0;
     while (1) {
         toggle = !toggle;
+        volatile int baseValue = 9898;
+        volatile int temp;
+        for(int i = 0; i < 1000; i++)
+        {
+            temp = baseValue++/7;
+        }
+        temp++;
         gpio_put(OUT_PIN, toggle);
         vTaskDelay(pdMS_TO_TICKS(DELAY_MS));
     }
