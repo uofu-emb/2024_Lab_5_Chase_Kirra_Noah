@@ -33,3 +33,9 @@
 <img src="pictures/task_delaywbusyloop.PNG">
 
 *task_delay with busy loop.c*
+
+## Agilent function generator Measurement
+
+<img src="pictures/Agilent function generator.PNG">
+
+*Agilent function generator*
