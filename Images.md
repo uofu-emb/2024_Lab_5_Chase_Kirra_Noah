@@ -1,6 +1,6 @@
 ## sleep.c Measurement
 
-![Image Description](pictures/sleep.PNG)
+<img src="pictures/sleep.PNG">
 
 *sleep.c*
 
