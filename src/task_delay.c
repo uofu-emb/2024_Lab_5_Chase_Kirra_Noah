@@ -10,6 +10,7 @@ void main_task(__unused void *params)
     while (1) {
         toggle = !toggle;
         gpio_put(OUT_PIN, toggle);
+        
         vTaskDelay(pdMS_TO_TICKS(DELAY_MS));
     }
 }
